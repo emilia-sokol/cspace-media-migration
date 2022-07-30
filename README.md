@@ -1,5 +1,5 @@
 # Collection space media migration script
-- Before running script go to ```constant.py``` and add url to your collection space instace -> collection_space
+- Before running script go to ```constant.py``` and add url to your collection space instace -> ```collection_space```
 - Then add new folder ```data\images``` and put all files that need to be migrated there
 
 ## Expectations
