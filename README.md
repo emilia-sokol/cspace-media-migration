@@ -1,6 +1,10 @@
 # Collection space media migration script
-- Before running script go to ```constant.py``` and add url to your collection space instace -> ```collection_space```
-- Then add new folder ```data\images``` and put all files that need to be migrated there
+Python script created to help with media migration for objects that were migrated into collection space and contain information about media file names in the comment section 
+
+## Before running script
+- Go to ```constant.py``` and add url to your collection space instace -> ```collection_space```
+- Add new folder ```data\images``` and put all files that need to be migrated there
+- Go to ```data\objects_ids.txt``` and either replace ids with your list or delete that file to pursue full migration (all object ids will be fetched from cspace in that case)
 
 ## Expectations
 1. Objects are already migrated into collection space
