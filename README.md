@@ -1,6 +1,6 @@
-#Collection space media migration script
+# Collection space media migration script
 
-##Expectations
+## Expectations
 1. Objects are already migrated into collection space
 2. Each object has comment section that contains media information written in following format:
 
@@ -45,7 +45,7 @@
 </list-item>
 ```
 
-##Notes
+## Notes
 1. Objects that requires media migration will be listed in ```data/objects_ids.txt ``` in following format:
 
 ```txt
