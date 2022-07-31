@@ -44,9 +44,10 @@ def filter_existing_images(images, obj_id):
             print(error)
         else:
             existing_images.append(image)
-    with open(img_error_file_name, mode='at', encoding='utf-8') as file:
-        file.write(obj_id + " - " + ', '.join(not_found) + " - " + str(len(not_found)) + "/" + str(len(images)) + "\n")
-    file.close()
+    if len(not_found) > 0:
+        with open(img_error_file_name, mode='at', encoding='utf-8') as file:
+            file.write(obj_id + " - " + ', '.join(not_found) + " - " + str(len(not_found)) + "/" + str(len(images)) + "\n")
+        file.close()
     return existing_images
 
 

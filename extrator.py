@@ -52,7 +52,7 @@ def fetch_objects_ids(pg_num, pg_size, auth):
     if int(items_in_page) < pg_size | (int(total_items) % pg_size == 0 & pg_size * pg_num == total_items):
         return ids
     else:
-        additional_ids = fetch_objects_ids(pg_num + 1, pg_size)
+        additional_ids = fetch_objects_ids(pg_num + 1, pg_size, auth)
         return ids + additional_ids
 
 
